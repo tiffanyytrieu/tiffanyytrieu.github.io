@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiffany's Portfolio</title>
 
   <style>
     body {
       font-family: 'Inter', Arial, sans-serif;
       margin: 0;
-      background: #faf7ff;
-      color: #333;
+      background: #FFF7FB; /* soft pink */
+      color: #5A4A58;
     }
 
     header {
-      background: #a58bff;
-      color: white;
-      padding: 40px 20px;
+      background: linear-gradient(180deg, #FFB7DD, #FFCFF3);
+      color: #4A2C3A;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 3rem;
+      font-weight: 800;
     }
 
     nav {
-      background: white;
+      background: #FFFFFFBB;
+      backdrop-filter: blur(6px);
       padding: 15px;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      border-bottom: 1px solid #eee;
+      gap: 25px;
       position: sticky;
       top: 0;
+      border-bottom: 1px solid #FFD6E9;
       z-index: 10;
     }
 
     nav a {
       text-decoration: none;
-      color: #5c4bbb;
-      font-weight: 600;
+      color: #C86FA8;
+      font-weight: 700;
+      font-size: 1rem;
     }
 
     section {
@@ -50,47 +53,51 @@
     }
 
     h2 {
-      color: #7a5cff;
+      color: #C56BA0;
       margin-bottom: 10px;
       font-size: 2rem;
+      font-weight: 700;
     }
 
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
       margin-top: 20px;
     }
 
     .card {
       background: white;
+      border-radius: 15px;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-      transition: transform 0.2s ease;
+      border: 2px solid #FFD6E9;
+      box-shadow: 0 4px 12px rgba(255, 182, 213, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(255, 182, 213, 0.55);
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      background: #eee4ff;
+      background: #FFE6F3;
       margin-top: 50px;
+      color: #A46C92;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+
   <header>
-    <h1>Tiffany Trieu</h1>
-    <p>Websites • Dashboards • Apps • Tech Projects</p>
+    <h1>✨ Tiffany Trieu ✨</h1>
+    <p>Websites • Dashboards • Apps • Creative Tech Projects</p>
   </header>
 
-  <!-- NAV -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Websites</a>
@@ -99,67 +106,62 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
+    <h2>💖 About Me</h2>
     <p>
-      Hi, I'm Tiffany! I have a passion for technology that includes building websites, dashboards, and simple apps that blend creativity with technology.
-      My projects reflect my curiosity, design sense, and passion for making ideas come to life.  
-      Feel free to explore!
+      Hi, I'm Tiffany! I am a new graduate in Business Technology Management from TMU. I always had a passion for technology which includes
+      creating websites, dashboards and functional projects like apps.
+      This is my little corner of the internet where creativity meets tech. ✨
     </p>
   </section>
 
-  <!-- WEBSITES -->
   <section id="projects">
-    <h2>Websites</h2>
+    <h2>🌸 Websites</h2>
     <div class="card-grid">
       <div class="card">
         <h3>Website Project 1</h3>
         <p>A short description of your project.</p>
-        <a href="#" target="_blank">View Project →</a>
+        <a href="#" target="_blank">View →</a>
       </div>
       <div class="card">
         <h3>Website Project 2</h3>
         <p>Another example of a website you made.</p>
-        <a href="#" target="_blank">View Project →</a>
+        <a href="#" target="_blank">View →</a>
       </div>
     </div>
   </section>
 
-  <!-- DASHBOARDS -->
   <section id="dashboards">
-    <h2>Dashboards</h2>
+    <h2>📊 Dashboards</h2>
     <div class="card-grid">
       <div class="card">
         <h3>Dashboard 1</h3>
-        <p>Power BI / Tableau / Excel dashboard project.</p>
-        <a href="#" target="_blank">View Dashboard →</a>
+        <p>A Power BI or Tableau dashboard.</p>
+        <a href="#" target="_blank">View →</a>
       </div>
     </div>
   </section>
 
-  <!-- APPS -->
   <section id="apps">
-    <h2>Apps</h2>
+    <h2>📱 Apps</h2>
     <div class="card-grid">
       <div class="card">
         <h3>App 1</h3>
-        <p>A simple app you built — mobile or web.</p>
-        <a href="#" target="_blank">View App →</a>
+        <p>A simple app you built.</p>
+        <a href="#" target="_blank">View →</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Want to connect? Reach me at:</p>
-    <p><strong>Email:</strong> tiffanyytrieu@gmail.com.com</p>
+    <h2>📬 Contact</h2>
+    <p>You can reach me at:</p>
+    <p><strong>Email:</strong> tiffanyytrieu@gmail.com </p>
     <p><strong>LinkedIn:</strong> <a href="#" target="_blank">https://www.linkedin.com/in/tiffany-trieu-5280a61b3/</a></p>
   </section>
 
   <footer>
-    © 2025 Tiffany • Built with ♥ and GitHub Pages
+    © 2025 Tiffany • Made with 💗 using GitHub Pages
   </footer>
 
 </body>
