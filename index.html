@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiffany's Portfolio</title>
+
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      background: #faf7ff;
+      color: #333;
+    }
+
+    header {
+      background: #a58bff;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5c4bbb;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #7a5cff;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #eee4ff;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, welcome to my portfolio!</h1>
-  <p>I build websites, dashboards, apps, and more.</p>
+  <!-- HEADER -->
+  <header>
+    <h1>Tiffany Trieu</h1>
+    <p>Websites • Dashboards • Apps • Tech Projects</p>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Websites</a>
+    <a href="#dashboards">Dashboards</a>
+    <a href="#apps">Apps</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Tiffany! I have a passion for technology that includes building websites, dashboards, and simple apps that blend creativity with technology.
+      My projects reflect my curiosity, design sense, and passion for making ideas come to life.  
+      Feel free to explore!
+    </p>
+  </section>
+
+  <!-- WEBSITES -->
+  <section id="projects">
+    <h2>Websites</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Website Project 1</h3>
+        <p>A short description of your project.</p>
+        <a href="#" target="_blank">View Project →</a>
+      </div>
+      <div class="card">
+        <h3>Website Project 2</h3>
+        <p>Another example of a website you made.</p>
+        <a href="#" target="_blank">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARDS -->
+  <section id="dashboards">
+    <h2>Dashboards</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Dashboard 1</h3>
+        <p>Power BI / Tableau / Excel dashboard project.</p>
+        <a href="#" target="_blank">View Dashboard →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPS -->
+  <section id="apps">
+    <h2>Apps</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>App 1</h3>
+        <p>A simple app you built — mobile or web.</p>
+        <a href="#" target="_blank">View App →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to connect? Reach me at:</p>
+    <p><strong>Email:</strong> tiffanyytrieu@gmail.com.com</p>
+    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">https://www.linkedin.com/in/tiffany-trieu-5280a61b3/</a></p>
+  </section>
+
+  <footer>
+    © 2025 Tiffany • Built with ♥ and GitHub Pages
+  </footer>
+
 </body>
 </html>
